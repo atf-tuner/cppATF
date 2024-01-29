@@ -1,17 +1,19 @@
-Auto-Tuning Framework (ATF)
-===========================
+cppATF: The Auto-Tuning Framework (ATF) in C++
+==============================================
 
-Auto-Tuning Framework (ATF) is a generic, general-purpose auto-tuning approach that automatically finds well-performing values of performance-critical parameters (a.k.a. tuning parameters), like the sizes of tiles and numbers of threads.
+Auto-Tuning Framework (ATF) is a generic, general-purpose auto-tuning approach that automatically finds well-performing values of performance-critical parameters (a.k.a. tuning parameters), such as sizes of tiles and numbers of threads.
 ATF works for programs written in arbitrary programming languages and belonging to arbitrary application domains, and it allows tuning for arbitrary objectives (e.g., high runtime performance and/or low energy consumption).
 
-A major feature of ATF is that it supports auto-tuning programs whose tuning parameters have *interdependencies* among them, e.g., the value of one tuning parameter has to be smaller than the the value of another tuning parameter.
+A major feature of ATF is that it supports auto-tuning programs whose tuning parameters have *interdependencies* among them, e.g., the value of one tuning parameter has to be smaller than the value of another tuning parameter.
 For this, ATF introduces novel process to *generating*, *storing*, and *exploring* the search spaces of interdependent tuning parameters (discussed in detail `here <https://dl.acm.org/doi/abs/10.1145/3427093/>`__).
 
-ATF comes with an easy-to-use user interface to make auto-tuning appealing to common application developers, based on a:
-  1. *Domain-Specific Language (DSL)*, for auto-tuning at compile time (a.k.a. offline tuning) (discussed `here <https://onlinelibrary.wiley.com/doi/full/10.1002/cpe.4423?casa_token=FO9i0maAi_MAAAAA%3AwSOYWsoqfLqcbazsprmzKkmI5msUCY4An5A7CCwi-_V8u10VdpgejcWuiTwYhWnZpaCJZ3NmXt86sg/>`__);
-  2.  *General Purpose Language (GPL)*, for auto-tuning at runtime (a.k.a. online tuning), currently focussed on C++ programs (discussed `here <https://ieeexplore.ieee.org/abstract/document/8291912/>`__).
+ATF comes with easy-to-use user interfaces to make auto-tuning appealing also to common application developers.
+The Interfaces are based on either:
 
-*This repository offers ATF's GPL-based C++ interface.*
+1. *Domain-Specific Language (DSL)*, for auto-tuning at compile time (a.k.a. offline tuning) (discussed `here <https://onlinelibrary.wiley.com/doi/full/10.1002/cpe.4423?casa_token=FO9i0maAi_MAAAAA%3AwSOYWsoqfLqcbazsprmzKkmI5msUCY4An5A7CCwi-_V8u10VdpgejcWuiTwYhWnZpaCJZ3NmXt86sg/>`__);
+2. *General Purpose Language (GPL)*, for auto-tuning at runtime (a.k.a. online tuning), e.g., of *C++ programs* (referred to as *cppATF*, and discussed `here <https://ieeexplore.ieee.org/abstract/document/8291912/>`__) or *Python programs* (referred to as *pyATF*, and discussed `here <todo>`__).
+
+**This repository contains cppATF, i.e., ATF with its GPL-based C++ interface.**
 
 Content
 -------
