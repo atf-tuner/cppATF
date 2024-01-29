@@ -148,10 +148,10 @@ auto tuning_result = atf::tuner().tuning_parameters( WPT, LS )
                                  .tune( cf_saxpy , atf::evaluations(50) );
 ```
 The tuning is started via function `tune` which takes as input the *cost function* (from Step 2) and an *abort condition* (in this example, testing 50 configurations).
-cppATF then automatically explores the search space and returns object `tuning_result` which contains: the best found configuration of tuning parameters, the cost of that configuratioan, etc.
+cppATF then automatically explores the search space and returns object `tuning_result` which contains: the best found configuration of tuning parameters, the cost of that configuration, etc.
 
 To reduce tuning time, cppATF allows exploiting actual program computations also for the exploration phase, by allowing the user program to explicitly guide the exploration process.
-This is in particular benefical for iterative applications, where the code part to tune is called repeatedly in the program flow, allowing benefitting from the calls also for exploration.
+This is in particular beneficial for iterative applications, where the code part to tune is called repeatedly in the program flow, allowing benefitting from the calls also for exploration.
 For this, cppATF provides function `make_step` which is used as an alternative to function `tune`, as demonstrated [here](examples/feature_demonstration/program_guided_optimization/program_guided_optimization.cpp).
 
 

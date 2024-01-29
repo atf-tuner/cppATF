@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Auto-Tuning Framework (ATF)'
-copyright = '2022, Ari Rasch, Richard Schulze'
+project = 'cppATF: The Auto-Tuning Framework (ATF) in C++'
+copyright = '2024, Ari Rasch, Richard Schulze'
 author = 'Ari Rasch, Richard Schulze'
 
 
