@@ -39,8 +39,8 @@ The kernel computes for all {math}`i\in[1,\texttt{N}]_\mathbb{N}`:
     y[ i ] = a * x[ i ] + y[ i ] 
 For simplicity, we removed in the kernel switching between single and double precision floating point numbers, as well as using OpenCL's vector data types.
 
-To auto-tune a program with ATF, the programmer has to perform three steps, as briefly outlined in the following.
-The complete ATF code for `saxpy` is available [here](https://github.com/atf-tuner/cppATF/blob/main/examples/full_examples/opencl__saxpy/opencl__saxpy.cpp).
+To auto-tune a program with cppATF, the programmer has to perform three steps, as briefly outlined in the following.
+The complete cppATF code for `saxpy` is available [here](https://github.com/atf-tuner/cppATF/blob/main/examples/full_examples/opencl__saxpy/opencl__saxpy.cpp).
 
 
 ### Step 1: Generate the Search Space

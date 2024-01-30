@@ -1,12 +1,12 @@
 Cost Functions
 ==============
 
-ATF allows as cost function any arbitrary C++ callable that takes as input a configuration of tuning parameters and returns a value for which operator :code:`<` is defined, e.g., :code:`size_t`.
+cppATF allows as cost function any arbitrary C++ callable that takes as input a configuration of tuning parameters and returns a value for which operator :code:`<` is defined, e.g., :code:`size_t`.
 
 Pre-Implemented Cost Functions
 ------------------------------
 
-ATF provides the following pre-implemented cost functions:
+cppATF provides the following pre-implemented cost functions:
 
 .. cpp:class:: generic::cost_function
 
