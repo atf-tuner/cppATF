@@ -11,10 +11,10 @@ int main()
   auto run_command     = "./raytracer";
   auto compile_command = "../raytracer/compile_raytracer.sh";
 
-  auto generic_cf = atf::generic::cost_function( run_command ).compile_command( compile_command );
+  auto cf_raytracer = atf::generic::cost_function( run_command ).compile_command( compile_command );
 
   // Step 3: Explore the Search Space
   auto tuning_result = atf::tuner().tuning_parameters( opt_level, align_functions, early_inlining_insns )
                                    .search_technique( atf::auc_bandit() )
-                                   .tune( generic_cf, atf::duration<std::chrono::minutes>( 5 ) );
+                                   .tune( cf_raytracer, atf::duration<std::chrono::minutes>( 5 ) );
 }
