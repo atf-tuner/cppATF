@@ -34,10 +34,10 @@ int main( int argc, char* argv[] )
 
   std::vector<float> data( (N+3) * (N+3) ); for (int i = 0; i < data.size(); ++i) data[i] = static_cast<float>((i % 10) + 1);
 
-  auto gaussian_cf = atf::cpp<tunable_gaussian>( data, N );
+  auto cf_gaussian = atf::cpp<tunable_gaussian>( data, N );
 
   for (int iter = 0; iter < 8; ++iter)
   {
-    tuner.make_step( gaussian_cf );
+    tuner.make_step( cf_gaussian );
   }
 }

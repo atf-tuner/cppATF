@@ -42,10 +42,10 @@ int main()
   int a[N][N];
   int b[N][N];
   int c[N][N];
-  auto cxx_cf = atf::cxx::cost_function<mmm_block>( a, b, c );
+  auto cf_matmul = atf::cxx::cost_function<mmm_block>( a, b, c );
 
   // Step 3: Explore the Search Space
   auto tuning_result = atf::tuner().tuning_parameters( BLOCK_SIZE )
                                    .search_technique( atf::exhaustive() )
-                                   .tune( cxx_cf, atf::duration<std::chrono::seconds>( 30 ) );
+                                   .tune( cf_matmul, atf::duration<std::chrono::seconds>( 30 ) );
 }
