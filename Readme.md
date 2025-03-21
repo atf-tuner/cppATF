@@ -9,7 +9,7 @@ For this, ATF introduces novel process to *generating*, *storing*, and *explorin
 ATF comes with easy-to-use user interfaces to make auto-tuning appealing also to common application developers.
 The Interfaces are based on either: 
   1. *Domain-Specific Language (DSL)*, for auto-tuning at compile time (a.k.a. offline tuning) (discussed [here](https://onlinelibrary.wiley.com/doi/full/10.1002/cpe.4423?casa_token=FO9i0maAi_MAAAAA%3AwSOYWsoqfLqcbazsprmzKkmI5msUCY4An5A7CCwi-_V8u10VdpgejcWuiTwYhWnZpaCJZ3NmXt86sg)); 
-  2. *General Purpose Language (GPL)*, for auto-tuning at runtime (a.k.a. online tuning), e.g., of *C++ programs* (referred to as [cppATF](https://github.com/atf-tuner/cppATF), and discussed [here](https://ieeexplore.ieee.org/abstract/document/8291912)) or *Python programs* (referred to as [pyATF]([todo](https://github.com/atf-tuner/pyATF)), and discussed [here](https://dl.acm.org/doi/abs/10.1145/3708493.3712682)).
+  2. *General Purpose Language (GPL)*, for auto-tuning at runtime (a.k.a. online tuning), e.g., of *C++ programs* (referred to as [cppATF](https://github.com/atf-tuner/cppATF), and discussed [here](https://ieeexplore.ieee.org/abstract/document/8291912)) or *Python programs* (referred to as [pyATF](https://github.com/atf-tuner/pyATF), and discussed [here](https://dl.acm.org/doi/abs/10.1145/3708493.3712682)).
 
 **This repository contains *cppATF*, i.e., ATF with its GPL-based *C++ interface*.**
 
@@ -273,21 +273,6 @@ Please use the following citation, when referring to ATF's:
 
 3. **GPL-Based Interfaces**:
 
-- *C++:*
-
-```latex
-@INPROCEEDINGS{8291912,
-  author={Rasch, Ari and Haidl, Michael and Gorlatch, Sergei},
-  booktitle={2017 IEEE 19th International Conference on High Performance Computing and Communications; IEEE 15th International Conference on Smart City; IEEE 3rd International Conference on Data Science and Systems (HPCC/SmartCity/DSS)}, 
-  title={ATF: A Generic Auto-Tuning Framework}, 
-  year={2017},
-  volume={},
-  number={},
-  pages={64-71},
-  doi={10.1109/HPCC-SmartCity-DSS.2017.9}
-}
-```
-
 - *Python:*
 
 ```latex
@@ -305,5 +290,21 @@ pages = {35–47},
 numpages = {13},
 location = {Las Vegas, NV, USA},
 series = {CC '25}
+}
+```
+
+
+- *C++:*
+
+```latex
+@INPROCEEDINGS{8291912,
+  author={Rasch, Ari and Haidl, Michael and Gorlatch, Sergei},
+  booktitle={2017 IEEE 19th International Conference on High Performance Computing and Communications; IEEE 15th International Conference on Smart City; IEEE 3rd International Conference on Data Science and Systems (HPCC/SmartCity/DSS)}, 
+  title={ATF: A Generic Auto-Tuning Framework}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={64-71},
+  doi={10.1109/HPCC-SmartCity-DSS.2017.9}
 }
 ```
